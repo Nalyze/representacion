@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion de 5B</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipografía amigable */
+            background-color: #d9a7f8; /* Verde pastel que pediste para el fondo de la página web */
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll; /* Permite el desplazamiento vertical en la página */
+            height: 100%; /* Hacer que la página ocupe todo el alto */
+        }
+
+        /* Estilo del título de la página */
+        .page-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #370145; /* Color verde oscuro para el texto */
+            background-color: #8422e080; /* Rosa con opacidad 50% */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Contenedor del libro */
+        .book {
+            width: 500px;
+            height: 600px;
+            background-color: #fff; /* Fondo blanco para el contenedor del libro */
+            border: 5px solid #870ede; /* Color verde #a9e9a4 para las orillas */
+            border-radius: 20px;
+            margin: 30px auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .book-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .book-page {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff; /* Fondo blanco para las páginas del libro */
+            border: 2px solid #9015d7; /* Color verde #a9e9a4 para los bordes de las páginas */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .book-page img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            text-align: center;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Botones de navegación */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            padding: 10px 20px;
+            background-color: #870ede;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #870ede;
+        }
+
+        /* Texto explicativo debajo del libro con fondo blanco transparente */
+        .explanation {
+            text-align: justify;
+            margin: 40px auto; /* Aumento el margen superior para separarlo más */
+            width: 80%;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+            padding: 20px; /* Asegura que el texto no toque los bordes */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Estilo para la firma del creador del libro */
+        .signature {
+            text-align: center;
+            margin-top: 40px; /* Separar de la explicación */
+            font-size: 20px;
+            font-weight: bold;
+            color: #370145;
+        }
+
+        .signature span {
+            font-style: italic;
+            color: #870ede;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Título de la página -->
+<div class="page-title">💫Provincia De Formosa💫</div>
+
+<!-- Contenedor del libro -->
+<div class="book">
+    <div class="book-inner">
+        <!-- Páginas del libro -->
+        <div class="book-page" id="page1">
+            <img src="imagenes/Argentina_Formosa_location_map.png" alt="Ilustración 1">
+            <div class="content">
+                <h2>¿Donde se ubica Formosa?</h2>
+                <p>Formosa es una provincia ubicada en el norte de Argentina, limitada al norte por Paraguay, al sur por la provincia de Chaco, al este por el río Paraguay, y al oeste por la provincia de Salta. Su capital es la ciudad de Formosa, que también es el centro económico y cultural de la provincia.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page2">
+            <img src="imagenes/lugares-en-formosa-2.png" alt="Ilustración 2">
+            <div class="content">
+                <h2>Lugares turísticos de Formosa</h2>
+                <p>Formosa ofrece destinos como el Parque Nacional Pilcomayo, ideal para el avistaje de aves, la Laguna Oca para actividades acuáticas, y la Reserva de Bañado La Estrella, rica en fauna. También destacan la Plaza San Martín y la Iglesia de Nuestra Señora del Carmen. El Parque Nacional Pilcomayo es el más visitado por su biodiversidad y accesibilidad.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page3">
+            <img src="imagenes/CAIF-Formosa-II-Trimestre-2020-5.png" alt="Ilustración 3">
+            <div class="content">
+                <h2>¿Cómo es la economía en Formosa?</h2>
+                <p>La economía de Formosa se basa principalmente en la agricultura (soja, maíz, trigo), la ganadería (especialmente bovina) y la pesca. También tiene un importante sector industrial ligado a la agroindustria, como la molienda de oleaginosas. Además, el comercio y los servicios son clave, con énfasis en el turismo y las actividades relacionadas con el comercio fronterizo debido a su cercanía con Paraguay.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page4">
+            <img src="imagenes/formosa1.png" alt="Ilustración 4">
+            <div class="content">
+                <h2>La cultura en Formosa</h2>
+                <p>La cultura de Formosa mezcla influencias indígenas (Qom, Mokoví) y tradicionales, destacando sus artesanías, música folklórica (zamba, chacarera) y festividades como el Festival del Litoral. Su gastronomía incluye platos como surubí y chipá.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page5">
+            <img src="imagenes/carpincho.png" alt="Ilustración 5">
+            <div class="content">
+                <h2>¿Cuáles son los animales de Formosa? </h2>
+                <p>En Formosa, se pueden encontrar una gran variedad de animales, tanto terrestres como acuáticos. Entre ellos destacan el yaguareté, ciervo de los pantanos, capibara, carpincho y diversas especies de aves, como el aguará guazú y el tucán. En los ríos y humedales habitan reptiles como el yacaré y el lagarto overo. La biodiversidad de la región es especialmente rica en el Parque Nacional Pilcomayo y la Reserva de Bañado La Estrella.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page6">
+            <img src="imagenes/177db-12-02-202bvr2blocro2bgr2b1.png" alt="Ilustración 6">
+            <div class="content">
+                <h2>¿Cuál es la comida típica de Formosa? </h2>
+                <p>La gastronomía de Formosa incluye platos tradicionales como el chipá (panecillo de mandioca y queso), el surubí (pescado de río, preparado de diversas formas), el mbejú (pastelito de mandioca y queso), la sopa paraguaya (pastel de maíz, queso y cebolla) y el locro (guiso de maíz, carne y vegetales). Además, se destacan las carnes asadas y los jugos naturales de frutas locales.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page7">
+            <img src="imagenes/chamame_2.png" alt="Ilustración 7">
+            <div class="content">
+                <h2>¿Cuál es la musica típica en Formosa?</h2>
+                <p>La música típica de Formosa está influenciada por el folklore del noreste argentino, destacando géneros como la zamba, chacarera, polka y guarania. También tiene una fuerte presencia de ritmos indígenas y la música de los pueblos originarios, como los Qom y Mokoví, que se expresa en danzas y canciones tradicionales.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page8">
+            <img src="imagenes/clima-formosa.png" alt="Ilustración 8">
+            <div class="content">
+                <h2>¿Cómo es el clima en Formosa?</h2>
+                <p>El clima en Formosa es tropical y subtropical, con veranos calurosos y húmedos e invierno suave. Las temperaturas en verano pueden superar los 35°C, mientras que en invierno rondan los 15-20°C. La lluvia es frecuente, especialmente en los meses de verano, y las precipitaciones anuales son moderadas a altas.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page9">
+            <img src="imagenes/298187_cosechaalgodon.png" alt="Ilustración 9">
+            <div class="content">
+                <h2>¿Cómo es la agricultura en Formosa?</h2>
+                <p>La agricultura en Formosa es un sector fundamental de su economía, destacándose el cultivo de soja, maíz, trigo, sorgo y maní. La producción de arroz también es importante, especialmente en áreas de riego cercanas al río Pilcomayo. Además, la agricultura familiar juega un papel relevante, cultivando frutas y verduras para el consumo local. Aunque el clima es favorable para la agricultura, la provincia enfrenta desafíos como sequías e inundaciones que afectan la producción.</p>
+            </div>
+        </div>
+
+        <div class="book-page" id="page10">
+            <img src="imagenes/a777385b815845e480c16efe9cb5c9bf222.png" alt="Ilustración 10">
+            <div class="content">
+                <h2>💫Un Articulo creado especialmente por 5B💫</h2>
+                <p>❤️</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="nav-buttons">
+        <button id="prevButton">Página Anterior</button>
+        <button id="nextButton">Página Siguiente</button>
+    </div>
+</div>
+
+<!-- Texto explicativo debajo del libro -->
+<div class="explanation">
+    <p>Formosa es una provincia argentina ubicada en la región del noreste del país, en la zona del Gran Chaco. Limita al norte con Paraguay, al este con el río Paraguay, al sur con la provincia de Chaco y al oeste con la provincia de Salta. Su capital es la ciudad de Formosa, que se encuentra en el centro de la provincia. La historia de esta provincia está estrechamente ligada a la presencia de pueblos originarios como los Qom, los Mocovíes, los Pilagás y los Nivaclé, quienes habitaron el territorio mucho antes de la llegada de los colonizadores españoles. 
+
+        A lo largo de los siglos XVII y XVIII, el área estuvo bajo la influencia del Imperio Español, quienes fundaron misiones jesuíticas en la región. En el siglo XIX, durante el proceso de organización nacional, Formosa pasó a ser parte del territorio argentino y, en 1853, se incorporó como provincia de la República Argentina, aunque no fue hasta 1884 que se establecieron los límites definitivos de la provincia tal como la conocemos hoy.
+    
+        Formosa ha tenido un desarrollo económico ligado principalmente a la ganadería y la agricultura. El clima subtropical y la abundante agua en sus ríos y humedales favorecieron la actividad agropecuaria, destacándose la producción de soja, maíz y arroz, entre otros productos. La ganadería bovina también juega un papel central en la economía de la provincia. En las últimas décadas, la provincia ha experimentado un crecimiento en sectores como el comercio, especialmente con la cercanía a Paraguay, que favorece el intercambio de productos. 
+    
+        En cuanto a la cultura, Formosa es una provincia de gran riqueza, con una mezcla de tradiciones indígenas y criollas. La música folklórica es una de sus principales expresiones culturales, destacando géneros como la zamba, la chacarera y la polka. Además, las festividades populares como el Festival del Litoral celebran la identidad regional a través de danzas, música y gastronomía. 
+    
+        En términos de biodiversidad, Formosa es un lugar privilegiado. Su territorio alberga parques nacionales como el Parque Nacional Pilcomayo, conocido por su gran variedad de fauna y flora. Es un lugar ideal para el avistaje de aves y una de las zonas más ricas en biodiversidad de la región chaqueña. Los humedales del Bañado La Estrella también son un ecosistema único que protege especies en peligro de extinción. 
+    
+        El turismo en Formosa ha crecido en los últimos años gracias a la belleza natural de sus paisajes, como la Laguna Oca y sus parques nacionales, y al interés por su cultura y tradiciones. En resumen, Formosa es una provincia de gran diversidad natural y cultural, que se encuentra en pleno proceso de desarrollo económico y que sigue siendo un punto de encuentro entre el pasado indígena y la modernidad.</p></p>
+</div>
+
+<!-- Firma del creador -->
+<div class="signature">
+    <p>Diseñado por: <span>💫Rocio Cachizumba💫</span></p>
+</div>
+
+<script>
+    let currentPage = 1;
+    const totalPages = 10;
+
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+
+    const pages = document.querySelectorAll('.book-page');
+
+    // Muestra la página actual
+    function showPage(page) {
+        // Ocultar todas las páginas
+        pages.forEach((pageElement, index) => {
+            pageElement.style.display = 'none';
+            if (index === page - 1) {
+                pageElement.style.display = 'flex';
+            }
+        });
+    }
+
+    // Mostrar la página inicial
+    showPage(currentPage);
+
+    // Función para cambiar de página
+    nextButton.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+</script>
+
+</body>
+</html>
+
